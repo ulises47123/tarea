@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Variables Estadísticas</title>
+    <!-- Incluye el script de Tailwind CSS para el estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Configuración de fuente Inter y estilos base */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro */
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen flex items-center justify-center">
+
+    <!-- Contenedor Principal -->
+    <div class="w-full max-w-4xl bg-white rounded-xl p-6 md:p-10 card-shadow">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-2">
+                Clasificación de Variables Estadísticas
+            </h1>
+            <p class="text-lg text-gray-500">
+                Estructura de tipos de variables: cualitativas y cuantitativas.
+            </p>
+        </header>
+
+        <!-- Contenedor de las dos categorías principales (Estructura de Árbol/Jerarquía) -->
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <!-- 1. Variable Cualitativa (Color Azul) -->
+            <div class="flex-1 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <!-- Icono para Cualitativa (SVG de una etiqueta/tag) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mr-3">
+                        <path d="M12 2H2v10l9.29 9.29c.94.94 2.47.94 3.41 0l5.29-5.29c.94-.94.94-2.47 0-3.41L12 2Z"/>
+                        <path d="M7 7h.01"/>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-blue-800">Variable Cualitativa</h2>
+                </div>
+                
+                <ul class="space-y-3 pl-4 border-l border-blue-300 ml-4">
+                    <!-- Subtipo: Nominal -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-blue-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Nominal</p>
+                        <p class="text-sm text-gray-500">Categorías sin orden ni jerarquía (e.g., color de ojos).</p>
+                    </li>
+                    <!-- Subtipo: Ordinal -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-blue-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Ordinal</p>
+                        <p class="text-sm text-gray-500">Categorías con un orden o jerarquía natural (e.g., nivel de satisfacción).</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 2. Variable Cuantitativa (Color Verde) -->
+            <div class="flex-1 p-6 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <!-- Icono para Cuantitativa (SVG de números/calculadora) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-600 mr-3">
+                        <rect width="16" height="20" x="4" y="2" rx="2"/>
+                        <line x1="8" x2="16" y1="6" y2="6"/>
+                        <line x1="16" x2="16" y1="18" y2="18"/>
+                        <line x1="8" x2="8" y1="18" y2="18"/>
+                        <line x1="12" x2="12" y1="18" y2="18"/>
+                        <line x1="8" x2="8" y1="14" y2="14"/>
+                        <line x1="12" x2="12" y1="14" y2="14"/>
+                        <line x1="16" x2="16" y1="14" y2="14"/>
+                        <line x1="8" x2="8" y1="10" y2="10"/>
+                        <line x1="12" x2="12" y1="10" y2="10"/>
+                        <line x1="16" x2="16" y1="10" y2="10"/>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-green-800">Variable Cuantitativa</h2>
+                </div>
+
+                <ul class="space-y-3 pl-4 border-l border-green-300 ml-4">
+                    <!-- Subtipo: Continua -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-green-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Continua</p>
+                        <p class="text-sm text-gray-500">Puede tomar cualquier valor dentro de un rango (e.g., peso, altura).</p>
+                    </li>
+                    <!-- Subtipo: Discreta -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-green-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Discreta</p>
+                        <p class="text-sm text-gray-500">Solo puede tomar valores enteros (e.g., número de hijos, coches).</p>
+                    </li>
+                    <!-- Subtipo: Intervalo -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-green-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Intervalo</p>
+                        <p class="text-sm text-gray-500">El cero es arbitrario, no indica ausencia (e.g., temperatura en °C o °F).</p>
+                    </li>
+                    <!-- Subtipo: Razón -->
+                    <li class="relative">
+                        <span class="absolute -left-5 top-1 h-3 w-3 bg-green-400 rounded-full border-2 border-white"></span>
+                        <p class="font-semibold text-gray-700">Razón</p>
+                        <p class="text-sm text-gray-500">El cero indica ausencia real de la propiedad (e.g., peso en kg, longitud).</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <footer class="mt-10 pt-6 border-t border-gray-200 text-center">
+            <p class="text-sm text-gray-400">
+                Estructura de clasificación basada en niveles de medición estadística.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
